@@ -10,13 +10,13 @@ import time
 hour = datetime.datetime.now().hour
 name=input("enter a name: ")
 if 5 <= hour < 12:
-    print("Good morning, name! ☀️")
+    print("Good morning", name,"! ☀️")
 elif 12 <= hour < 17:
-    print("Good afternoon, name! 🌤️")
+    print("Good afternoon", name,"! 🌤️")
 elif 17 <= hour < 21:
-    print("Good evening, name! 🌇")
+    print("Good evening", name,"! 🌇")
 else:
-    print("Good night, name! 🌙")
+    print("Good night", name,"! 🌙")
 
 # -----------------------------------------------
 
@@ -95,4 +95,4 @@ while True:
     print("Bot Answer:", reply)
 
     if any(word in user.lower() for word in ["bye", "goodbye", "see you"]):
-    break
+        break
